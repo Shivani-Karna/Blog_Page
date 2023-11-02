@@ -9,7 +9,7 @@
   <body>
     <header>
       <nav class="">
-                 <ul class="flex justify-between items-center text-xl space-x-5 bg-gray-200 p-3">
+                 <ul class="flex justify-between items-center text-xl space-x-5  p-3">
                  <img src="/images/logo.png" class=""/>   
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Politics</a></li>
@@ -17,10 +17,29 @@
                     <li><a href="#">Tech</a></li>
                     <li><a href="#">Sports</a></li>
                     <li><a href="#">Celebrities</a></li>
+                    <li class=" mr-0 text-sm">
+                      <label for="Searchbar">Search Content:</label>
+                      <input class="border-black rounded-sm " type="text" id="search" name="search"></li>
                  </ul>   
       </nav>
     </header>
-    <main></main>
+    <main class="border-2 border-black">
+      <!-- Hero Section -->
+       <section class="grid grid-cols-4 grid-rows-3 gap-2 rounded-lg shadow-xl h-screen w-full text-center">
+          <div class="bg-gray-200 col-span-3 row-span-3 ">Content 1</div>
+          <div class="bg-red-200">Content 2</div>
+          <div class=" bg-rose-200 ">Content 3</div>
+          <div class=" bg-orange-200">Content 4</div>
+       </section>
+       <!-- Don't Miss Section -->
+       <section>
+              <div>Feature 1</div>
+              <div>Feature 2</div>
+              <div>Feature 3</div>
+              <div>Feature 4</div>
+              <div>Feature 5</div>
+       </section>
+    </main>
     <footer></footer>
   </body>
 </html>
