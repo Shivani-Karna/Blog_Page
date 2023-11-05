@@ -7,33 +7,57 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <nav>
+    <nav class="">
       <ul class="flex gap-5 m-2 p-2 text-2xl">
         <li class="ml-3 mx-2 my-2"><a href="#">Product</a></li>
         <li class="mx-2 my-2"><a href="#">About</a></li>
         <li class="mx-2 my-2"><a href="#">Resources</a></li>
         <li class="ml-auto">
-                    <img class="" src="/images/pando.png" alt="Logo of website">
+          <img class="" src="/images/pando.png" alt="Logo of website" />
         </li>
         <li class="ms-auto mx-2 my-2"><a href="#">Login</a></li>
         <li>
-                    <button class="bg-[#f6653b] rounded-lg text-sm p-2 m-2">Request Demo</button>
+          <button class="bg-[#f6653b] rounded-lg text-sm p-2 m-2">
+            Request Demo
+          </button>
         </li>
-        
       </ul>
     </nav>
     <main>
-                    <!-- Hero Section -->
-                    <section class="bg-[#f8ecdd]">
-                    <div>
-                                        <h1 class="font-bold text-2xl m-2 p-2 font-4xl ">Continuous Progression drives performance.</h1>
-                    <p class="ml-5">Carrer framewoeks, feedback and goals to structure,
-                                    measure and accelerate business impact. 
-                    </p>
-                    <button class=" ml-5 bg-[#f6653b] rounded-lg m-2 p-2">Request demo</button>
+      <!-- Hero Section -->
+      <section class="bg-[#f8ecdd] grid grid-cols-2 w-full h-96">
+        <div class="col-span-1">
+          <h1 class="font-bold text-2xl m-2 p-2 font-4xl">
+            Continuous Progression drives performance.
+          </h1>
+          <p class="ml-5">
+            Carrer frameworks, feedback and goals to structure, measure and
+            accelerate business impact.
+          </p>
+          <button class="ml-5 bg-[#f6653b] rounded-lg m-2 p-2">
+            Request demo
+          </button>
+        </div>
+        <div class="bg-green-200 relative">
+                    <div class="bg-emerald-500 shadow-lg rounded-2xl h-32 w-48 relative z-10">Green Background</div>
+                    <div class="bg-blue-200 shadow-lg rounded-2xl h-32 w-48 relative z-20 -mt-16 ml-16">Image</div>
+                    <div class="bg-lime-200 shadow-lg rounded-2xl h-32 w-48 relative z-30 -mt-16 ml-32">Domain Expertise</div>
+                    <div class="relative">
+                      <button class="bg-blue-400 top-2 right-4 z-40 rounded-lg">Mobile</button>
                     </div>
-
-                    </section>
+                  </div>
+        </div>
+      </section>
+      <!-- Profile Section -->
+      <section class="bg-slate-800 relative">
+                    <div>
+                      <h1 class="text-white font-bold text-center w-96 h-64">Increase Employee Lifetime Value</h1>
+                    </div>
+                    <div class="bg-blue-200 h-64 w-96 m-3 p-2 absolute top-0  bottom-5 left-5 z-20">
+                      <!-- Content of the second div -->
+                    </div>
+                  </section>
+                  
     </main>
     <footer></footer>
   </body>
