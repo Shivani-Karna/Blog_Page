@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <div class="bg-black flex text-white gap-1 text-center border-l-2  border-gray-500 h-[50px] justify-center items-center">
+      <div class="bg-black flex text-white gap-2 text-center border-l-2  border-gray-500 h-[50px] justify-center items-center">
           <div class="bg-[#ff3359] w-1/4 h-[50px] justify-center">
             <h3 class="font-bold ">Trending News</h3>
           </div>
@@ -39,7 +39,11 @@
         <div class="flex justify-between items-center space-x-7 ">
           <img src="/images/logo.png" class="ml-5" />
           <ul class="flex space-x-5 gap-1 justify-between items-center">
-            <li><a href="#">Home</a></li>
+            <div class="flex gap-1">
+            <li><a href="#">Home</a>
+              <img src="./images/down.png" alt="down arrow" class="w-4 absolute left-[525px] top-[95px]">
+            </li>
+          </div>
             <li><a href="#">Politics</a>
               
               <span class="">
@@ -65,10 +69,17 @@
                 <nav class="absolute text-[0.5em] top-[70px] left-[1155px]">new</nav>
               </span>
               </li>
-            <li><a href="#">Pages</a></li>
+              <div>
+                <li>
+                  <a href="#">Pages</a>
+                  <img src="./images/down.png" alt="" class="w-4 absolute right-[630px] top-[95px]">
+                </li>
+              </div>
+            
           </ul>
+
           <div class="flex">
-            <input type="search" placeholder="Search Here..." class="border-gray-200 border-l-2  border-gray-500  py-3 px-2"/>
+            <input type="search" placeholder="Search Here..." class="border-gray-200 border-l-2  border-gray-500  py-3 px-2">
             <img src="./images/Search.png" alt="" class="w-5 h-5 absolute  top-[90px] right-[55px]">
           </div>
           
