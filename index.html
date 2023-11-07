@@ -9,7 +9,9 @@
   <body>
     <header>
       <div class="bg-black flex text-white gap-2 text-center border-l-2  border-gray-500 h-[50px] justify-center items-center">
-        <div class="w-1/4 skew-x-[155deg] bg-[#ff3359] h-[50px]">
+        <!-- <div class="bg-[#ff3359 h-[50px]">new</div> -->
+        
+        <div class="w-1/4 skew-x-[178deg] bg-[#ff3359] h-[50px]">
         </div>
         <div class="absolute left-[150px] font-bold"> <h3>Trending News</h3></div>
        
@@ -18,7 +20,7 @@
           </div> -->
           <!-- <div class="w-100 h-50 transform skew-x-20 bg-[#ff3359] h-[50px]"></div> -->
           <div class="w-3/4">
-            <div class="flex justify-left ">
+            <div class="flex item-left p-10 ">
               <img src="./images/bull-horn.png" alt="" class="w-[30px] h-[30px]">
             <p>Parquet Courts on Resisting Nihilism & Why Tourism in Dubai</p>
           </div>
@@ -99,30 +101,36 @@
       <section class="grid grid-cols-4 grid-cols-4 gap-2">
       <!-- First Part -->
       <div class="bg-blue-400 col-span-3 row-span-3 shadow-lg">
-      <img src="./images/content12.jpg" alt="" class="  w-full h-full">
-      <div class="bg-white absolute top-[1000px] left-[80px] w-[750px] h-48 p-5 gap-2">
-      <section class="">
-       <p class="font-bold text-left">Posted on January 28, 2022-<span class="text-red-500">FASHION</span></p>
-      </section>
-      <section>
-       <h1 class="text-2xl font-bold text-left w-[400px] ">Because New Fashion Do Never Follow Trends</h1>
-      </section>
-      <section>
-       <img src="./images/boy1.jpg" alt="" class="rounded-full h-[45px] w-[45px]">
-       <h3 class="absolute left-[80px] top-[145px]">John Doe</h3>
-       <div class="absolute left-[200px] top-[145px]">Icon</div>
-       <h2 class="border-l-4 border-red-500 p-2 font-bold absolute left-[35px]">Next Story</h2>
-      </section>
+      <img src="./images/content12.jpg" alt="" class="w-full h-full">
+<!-- Popup Section -->
+      <div class="bg-white absolute top-[1000px] left-[80px] w-[750px] h-48 p-4">
+        <div class=" gap-5">
+      <div>
+       <p class="font-bold text-left">Posted on January 28, 2022 - <span class="text-red-500">FASHION</span></p>
+      </div>
+      <div>
+       <h1 class="text-2xl font-bold text-left w-[400px]">Because New Fashion Do Never Follow Trends</h1>
+      </div>
+      <div class="flex">
+      <div><img src="./images/boy1.jpg" alt="" class="rounded-full h-[35px] w-[35px]"></div>  
+      <div><h3 class="absolute left-[80px] top-[135px]">John Doe</h3></div>
+      <div class="absolute left-[200px] top-[135px]">Icon</div>
+    </div>
+    <!-- Next Story Part  -->
+      <div class="border-l-4 border-red-500 p-1 relative left-[10px] top-[20px]"><h2>Next Story</h2></div>
+    </div>
+       
+      
       </div>
       </div>  
       <!-- Second PArt -->
       <div class="bg-blue-200 shadow-lg ">
       <img src="./images/content13.jpg" alt="Content2 image" class="">
-      <div class="text-black p-2 absolute top-[450px] text-orange-500">
+      <div class="text-black p-2 absolute top-[450px] text-black-500">
           <h3 class="font-bold">Because New Fashion Do never Follow Trend</h3>
           <div class="flex gap-2"><img src="./images/boy2.jpg" alt="" class="w-[25px]  h-[25px] rounded-full">
-          <p>John Doe</p>
-          <h4>Icons</h4>
+          <p class="font-bold">John Doe</p>
+          <!-- <h4>Icons</h4> -->
       </div>   
       </div>
       </div>
@@ -130,22 +138,22 @@
 
       <div class="bg-cyan-200 shadow-lg ">
       <img src="./images/content13.jpg" alt="Content3 image">
-      <div class="p-2 absolute top-[825px] text-orange-500">
+      <div class="p-2 absolute top-[825px] text-black-500">
           <h3 class="font-bold">Because New Fashion Do never Follow Trend</h3>
           <div class="flex gap-2"><img src="./images/boy2.jpg" alt="" class="w-[25px]  h-[25px] rounded-full">
-          <p>John Doe</p>
-          <h4>Icons</h4>
+          <p class="font-bold">John Doe</p>
+          <!-- <h4>Icons</h4> -->
         </div>
       </div>
       <!-- Fourth Part  -->
       <div class="bg-gray-200 shadow-lg">
       <img src="./images/content13.jpg" alt="Content4 image">
 
-      <div class="p-2 absolute top-[1200px] text-orange-500">
+      <div class="p-2 absolute top-[1200px] text-black-500">
           <h3 class="font-bold">Because New Fashion Do never Follow Trend</h3>
-          <div class="flex gap-2"><img src="./images/boy2.jpg" alt="" class="w-[25px]  h-[25px] rounded-full">
-          <p>John Doe</p>
-          <h4>Icons</h4></div>
+          <div class="flex"><img src="./images/boy2.jpg" alt="" class="w-[25px]  h-[25px] rounded-full">
+          <p class="font-bold">John Doe</p>
+          <!-- <h4>Icons</h4></div> -->
       </div>
       </section>
 
@@ -168,21 +176,20 @@
        <!-- First Page  -->
       <div class="shadow-lg col-span-3">
        <section class="">
-        <img src="./images/content11.jpg" alt="Image not found" class=" w-[1000px] h-[400px]" >
+        <img src="./images/smallest.jpg" alt="Image not found" class=" w-[1000px] h-[400px]" >
        </section>
-       <section class="p-3">
-        <h2  class="font-bold">Everything you need to Know Valkyries</h2>
+       <section class="p-4">
+        <h2  class="font-bold text-xl">Everything you need to Know Valkyries</h2>
        </section>
-       <section class="p-3 text-justify">
+       <section class="p-4 text-justify">
         <p>Lorem ipsum dolor sit amet,consectetur adipisicing elito eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim vis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodconsequatis qute irure dolor in reprehenderit in.</p>
        </section>
-       <section class="p-3">
-        <div class="flex gap-1">
+       <section class="p-4">
+        <div class="flex gap-2">
           <img src="./images/profile.png" alt="Icon" class="w-[25px] h-[25px] ">
           <div>By - <span class="text-red-500">John Devina</span> On <b>Sep 18, 2022</b></div>
-
-          <img src="./images/speech-bubble.png" alt="comment icon" class="w-[25px] h-[25px]">
-          <p>0 Comment</p>
+          <div class="mt-1"><img src="./images/speech-bubble.png" alt="comment icon" class="w-[20px] h-[20px]"></div>
+          <div><p>0 Comment</p></div> 
         </div>
        </section>
       </div> 
@@ -192,14 +199,14 @@
         <section>
          <img src="./images/content11.jpg" alt="Image not found" class=" w-[1000px] h-[400px]">
         </section>
-        <section class="p-3">
-         <h2 class="font-bold">Everything you need to Know Valkyries</h2>
+        <section class="p-4">
+         <h2 class="font-bold text-xl">Everything you need to Know Valkyries</h2>
         </section>
-        <section class="p-3">
+        <section class="p-3 p-4">
          <p class="text-justify">Lorem ipsum dolor sit amet,consectetur adipisicing elito eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim vis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodconsequatis qute irure dolor in reprehenderit in.</p>
         </section>
-        <section class="p-3">
-          <div class="flex">
+        <section class="p-4">
+          <div class="flex gap-1">
           <img src="./images/profile.png" alt=""  class="w-[25px] h-[25px]">
            <div>By - <span class="text-red-500">John Devina</span> On <b>Sep 18, 2022</b></div>
           </div>
@@ -212,14 +219,14 @@
         <section>
          <img src="./images/boy1.jpg" alt="Image not found" class=" w-[800px] h-[350px]">
         </section>
-        <section class="p-3">
-         <h2 class="font-bold">Seven William worries Welsh wilil be at sixes & sevens</h2>
+        <section class="p-4">
+         <h2 class="font-bold text-xl">Seven William worries Welsh wilil be at sixes & sevens</h2>
         </section>
-        <section class="p-3">
+        <section class="p-4 ">
          <p class="text-justify">Lorem ipsum dolor sit amet,consectetur adipisicing elito eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim vis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodconsequatis qute irure dolor in reprehenderit in.</p>
         </section>
-        <section class="p-3">
-          <div class="flex">
+        <section class="p-4">
+          <div class="flex gap-1">
            <img src="./images/profile.png" alt=""  class="w-[25px] h-[25px]">
            <div>By - <span class="text-red-500">John Devina</span> On <b>Sep 18, 2022</b></div>
           </div>
@@ -230,21 +237,19 @@
        <!-- Fourth Page -->
        <div class="shadow-lg col-span-2">
         <section>
-         <img src="./images/smallest.jpg" alt="Image not found" class=" w-[800px] h-[350px]">
+         <img src="./images/boy3.jpg" alt="Image not found" class=" w-[800px] h-[350px]">
         </section>
-        <section class="p-3">
-         <h2 class="font-bold">Seven William worries Welsh wilil be at sixes & sevens</h2>
+        <section class="p-4">
+         <h2 class="font-bold text-xl">Seven William worries Welsh wilil be at sixes & sevens</h2>
         </section>
-        <section class="p-3 ">
+        <section class="p-4 ">
          <p class="text-justify">Lorem ipsum dolor sit amet,consectetur adipisicing elito eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim vis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodconsequatis qute irure dolor in reprehenderit in.</p>
         </section>
-       
-        <section class="p-3">
-          <div class="flex">
-           <img src="./images/profile.png" alt=""  class="w-[25px] h-[25px]">
-           <div>By - <span class="text-red-500">John Devina</span> On <b>Sep 18, 2022</b></div>
-           <img src="" alt="">
-          </div>
+        <section class="p-4">
+          <div class="flex gap-1">
+            <img src="./images/profile.png" alt=""  class="w-[25px] h-[25px]">
+            <div>By - <span class="text-red-500">John Devina</span> On <b>Sep 18, 2022</b></div>
+           </div>
         </section>
        </div> 
 
@@ -253,22 +258,22 @@
 
        <div class="shadow-lg col-span-2">
         <section>
-         <img src="./images/content13.jpg" alt="Image not found" class=" w-[800px] h-[350px]">
-        </section>
-        <section class="p-3">
-         <h2 class="font-bold">Seven William worries Welsh wilil be at sixes & sevens</h2>
-        </section>
-        <section class="p-3">
-         <p class="text-justify">Lorem ipsum dolor sit amet,consectetur adipisicing elito eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim vis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodconsequatis qute irure dolor in reprehenderit in.</p>
-        </section>
-        <section class="p-3">
-          <div class="flex">
-           <img src="./images/profile.png" alt="" class="w-[25px] h-[25px]">
-           <div>By - <span class="text-red-500">John Devina</span> On <b>Sep 18, 2022</b></div>
-          </div>
-        </section>
-       </div>
-      </div> 
+          <img src="./images/boy2.jpg" alt="Image not found" class=" w-[800px] h-[350px]">
+         </section>
+         <section class="p-4 text-xl">
+          <h2 class="font-bold text-left">Seven William worries Welsh wilil be at sixes & sevens</h2>
+         </section>
+         <section class="p-4 ">
+          <p class="text-justify">Lorem ipsum dolor sit amet,consectetur adipisicing elito eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim vis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodconsequatis qute irure dolor in reprehenderit in.</p>
+         </section>
+         <section class="p-4">
+          <div class="flex gap-1">
+            <img src="./images/profile.png" alt=""  class="w-[25px] h-[25px]">
+            <div>By - <span class="text-red-500">John Devina</span> On <b>Sep 18, 2022</b></div>
+           </div>
+         </section>
+
+    </div>
 
 
        <!-- <div class="bg-amber-300 col-span-3 rounded-lg shadow-xl flex">
