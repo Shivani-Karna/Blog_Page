@@ -6,34 +6,39 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="bg-[#f3f4f7]">
     <!-- Top Section -->
     <header
-      class="bg-lime-200 flex justify-between p-4 border-b-2 border-black"
+      class="bg-[#ffffff] flex justify-between p-4 border-b-2 border-black"
     >
-      <div class="flex gap-3 px-10">
-        <img src="./images/calendar.png" alt="" class="w-[25px] h-[25px]" />
-        <p>28 January, 2022, 04:57</p>
-      </div>
-      <div class="flex gap-3 border-l-4 border-gray-400 px-15">
-        <img src="./images/clear-sky.png" alt="" class="w-[25px] h-[25px]" />
-        <p>31<sup>0</sup>C, California</p>
-      </div>
-      <div class="justify-center">
+    <div class="flex gap-3 px-10">
+                    <div class="flex items-center">
+                      <img src="./images/calendar.png" alt="" class="w-[25px] h-[25px]" />
+                      <p>28 January, 2022, 04:57</p>
+                    </div>
+                    <!-- Weather App -->
+                    <div class="flex gap-4 pt-2 ml-7 border-l-2 border-gray-400">
+                      <img src="./images/clear-sky.png" alt="" class="w-[25px] h-[25px]" />
+                      <p>31<sup>0</sup>C, California</p>
+                    </div>
+                  </div>
+                  
+      <!-- Logo -->
+      <div class="items-center pr-10 pt-3">
         <img src="./images/logo (1).png" alt="" />
       </div>
       <div class="flex gap-2 pr-20">
         <img
           src="./images/girl.jpg"
           alt=""
-          class="w-[50px] h-[50px] rounded-full"
+          class="w-[50px] h-[50px] rounded-full pt-1"
         />
-        <p>Dhruv Joe</p>
-        <img src="./images/down.png" alt="" class="w-[25px] h-[25px]" />
+        <p class="pt-2">Dhruv Joe</p>
+        <img src="./images/down.png" alt="" class="w-[30px] h-[30px] mt-2" />
       </div>
     </header>
     <!-- Nav Section -->
-    <nav class="bg-blue-200 flex p-6 justify-between px-12">
+    <nav class="bg-[#ffffff] flex p-6 justify-between px-12">
       <!-- Left Part -->
       <div class="flex item-left">
         <img src="./images/bull-horn.png" alt="" class="w-[30px] h-[30px]" />
@@ -41,7 +46,7 @@
       </div>
 
       <!--Right Part  -->
-      <div class="flex gap-6 pr-10">
+      <div class="flex gap-6 pr-10 font-bold">
         <section class="flex">
           Home
           <img src="./images/down.png" alt="" class="[20px] [20px]" />
@@ -67,42 +72,46 @@
     </nav>
     <!-- Travel Photo -->
     <div
-      class="w-full h-48 bg-cover bg-center"
+      class="w-full h-48 bg-cover bg-center "
       style="
-        background-image: url('./images/beautiful-girl-standing-viewpoint-koh-nangyuan-island-near-koh-tao-island-surat-thani-thailand.jpg');
+        background-image: url('./images/pond-near-forest-sticks-ground-silhouette-rocks-with-fog-surrounding-them.jpg');
       "
     >
-      <h1 class="font-bold text-2xl text-center text-white margin-auto">
+      <h1 class="font-bold text-6xl  text-white  absolute top-[250px] left-[1020px] ">
         Travel
       </h1>
-      <button class="text-white rounded-lg border-black border">
-        You are here:Home/Travel
+      <button class="text-white p-2 rounded-lg border-black border absolute bg-[#011628] top-[350px] left-[1000px] shadow-lg">
+        You are here : Home/Travel
       </button>
     </div>
 
     <!-- Main Section -->
 
-    <main class="m-20">
-      <div class="grid grid-cols-2 grid-rows-5 gap-5">
+    <main class="m-20  pl-5 pr-10">
+      <div class="grid grid-cols-4 gap-5 shadow-xl">
         <!-- First Section -->
-        <section class="bg-blue-200 row-span-2">
-          <div class="">
+        <section class="bg-[#ffffff] col-span-2 p-5 ">
+          <div class="p-auto gap-2">
             <section class="">
               <img
                 src="./images/banner.jpg"
                 alt="Image not found"
-                class="w-[1000px] h-[400px]"
+                class="w-full h-[600px]"
               />
-              <h1 class="font-bold text-xl">
+              <h1 class="font-bold text-xl p-2">
                 Office Volunteers Needed To Answer and Help With Office Duties
               </h1>
               <!-- Name and Icon Section -->
-              <div class="flex">
-                <img src="./images/girl.jpg" alt="" class="w-[50px] h-[50px] rounded-full"/>
+              <div class="flex gap-2 p-2">
+                <img
+                  src="./images/girl.jpg"
+                  alt=""
+                  class="w-[50px] h-[50px] rounded-full"
+                />
                 <p>Dhruv</p>
                 <p>Icon</p>
               </div>
-              <p>
+              <p class="p-2">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Maiores, eum quidem, ullam adipisci repellat labore dolores
                 incidunt eaque distinctio ducimus ipsum nemo voluptas ipsam
@@ -112,74 +121,185 @@
                 cupiditate ullam? Minima quasi optio velit voluptates ipsa
                 repudiandae dignissimos autem quia quam enim.
               </p>
-              <div class="flex">
-                    <h1>Read More</h1>
-                    <img src="./images/right-arrow.png" alt="">
+              <div class="flex p-2">
+                <h1 class="text-red-500">Read More</h1>
+                <img src="./images/right-arrow.png" alt="" />
               </div>
             </section>
           </div>
         </section>
         <!-- Second Section -->
-        <section class="bg-cyan-200 row-span-2">
-          <div class="">
+        <section class=" col-span-2 gap-2 shadow-xl bg-[#ffffff]">
+          <div class="p-5">
             <section class="">
               <img
                 src="./images/banner2.jpg"
                 alt="Image not found"
-                class="w-[1000px] h-[400px]"
+                class="w-full h-[600px]"
               />
             </section>
+            <h1 class="font-bold text-xl p-2">
+              Office Volunteers Needed To Answer and Help With Office Duties
+            </h1>
+            <div class="flex gap-2 p-2">
+              <img
+                src="./images/girl.jpg"
+                alt=""
+                class="w-[50px] h-[50px] rounded-full"
+              />
+              <p>Dhruv</p>
+              <p>Icon</p>
+            </div>
+            <p class="p-2">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores,
+              eum quidem, ullam adipisci repellat labore dolores incidunt eaque
+              distinctio ducimus ipsum nemo voluptas ipsam saepe quibusdam
+              inventore aliquam repudiandae quo tempora? Temporibus ratione
+              magni, consequatur voluptates suscipit minus, eius magnam eveniet
+              ducimus id optio assumenda maiores, cupiditate ullam? Minima quasi
+              optio velit voluptates ipsa repudiandae dignissimos autem quia
+              quam enim.
+            </p>
+            <div class="flex p-2">
+              <h1 class="text-red-500">Read More</h1>
+              <img src="./images/right-arrow.png" alt="" />
+            </div>
           </div>
         </section>
         <!-- Third Section -->
-        <section class="bg-green-200 col-span-2">
-          <div class="">
-            <section>
-              <img
-                src="./images/01.jpg"
-                alt="Image not found"
-                class="w-[800px] h-[350px]"
-              />
-            </section>
+        <section class=" col-span-4 bg-[#ffffff]">
+          <div class="p-5">
+            <div class="flex">
+              <div class="mr-5"><img src="./images/02.jpg" alt="" class="w-[400px] h-[200px]" /></div>
+              <div>
+                <h1 class="font-bold p-2">
+                  What Should You Take In Your Bag Before Going.
+                </h1>
+                <div class="flex gap-2 p-2">
+                  <img
+                    src="./images/girl.jpg"
+                    alt=""
+                    class="h-[50px] w-[50px] rounded-full"
+                  />
+                  <p>Dhruv Jain</p>
+                  <p>Icon</p>
+                </div>
+                <p class="text-justify p-2">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Illum aliquam vel magnam laborum impedit quis atque. Libero
+                    officiis ab, maxime, dolor excepturi, iure ex saepe qui
+                    impedit magni doloribus eligendi.Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit, sed do eiusmod incididunt ut
+                    labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit, sed do eiusmod incididunt ut
+                    labore et dolore magna aliqua
+                </p>
+              </div>
+            </div>
           </div>
         </section>
+
         <!-- Fourth Section -->
-        <section class="bg-red-200 col-span-2">
-          <div class="">
-            <section>
-              <img
-                src="./images/02.jpg"
-                alt="Image not found"
-                class="w-[800px] h-[350px]"
-              />
-            </section>
+        <section class="col-span-4 bg-[#ffffff]">
+          <div class="p-5">
+            <div class="flex">
+              <div class="mr-5"><img src="./images/03.jpg" alt="" class="w-[400px] h-[200px]"/></div>
+              <div>
+                <h1 class="font-bold p-2">
+                  What Should You Take In Your Bag Before Going.
+                </h1>
+                <div class="flex gap-2">
+                  <img
+                    src="./images/girl.jpg"
+                    alt=""
+                    class="h-[50px] w-[50px] rounded-full"
+                  />
+                  <p>Dhruv Jain</p>
+                  <p>Icon</p>
+                </div>
+                <p class="text-justify p-2">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Illum aliquam vel magnam laborum impedit quis atque. Libero
+                    officiis ab, maxime, dolor excepturi, iure ex saepe qui
+                    impedit magni doloribus eligendi.Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit, sed do eiusmod incididunt ut
+                    labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit, sed do eiusmod incididunt ut
+                    labore et dolore magna aliqua
+                </p>
+              </div>
+            </div>
           </div>
         </section>
         <!-- Fifth Section -->
-        <section class="bg-gray-200 col-span-2">
-          <div class=" ">
-            <section>
-              <img
-                src="./images/03.jpg"
-                alt="Image not found"
-                class="w-[800px] h-[350px]"
-              />
-            </section>
+        <section class=" col-span-4 bg-[#ffffff]">
+          <div class="p-5">
+            <div class="flex">
+              <div class="mr-5"><img src="./images/04.jpg" alt="" class="w-[400px] h-[200px]" /></div>
+              <div>
+                <h1 class="font-bold p-2">
+                  What Should You Take In Your Bag Before Going.
+                </h1>
+                <div class="flex gap-2 p-2">
+                  <img
+                    src="./images/girl.jpg"
+                    alt=""
+                    class="h-[50px] w-[50px] rounded-full"
+                  />
+                  <p>Dhruv Jain</p>
+                  <p>Icon</p>
+                </div>
+                <p class="text-justify p-2">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Illum aliquam vel magnam laborum impedit quis atque. Libero
+                  officiis ab, maxime, dolor excepturi, iure ex saepe qui
+                  impedit magni doloribus eligendi.Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit, sed do eiusmod incididunt ut
+                  labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+                  consectetur adipisicing elit, sed do eiusmod incididunt ut
+                  labore et dolore magna aliqua
+                </p>
+              </div>
+            </div>
           </div>
         </section>
         <!-- Sixth Section -->
-        <section class="bg-rose-200 col-span-2">
-          <div class="">
-            <section>
-              <img
-                src="./images/04.jpg"
-                alt="Image not found"
-                class="w-[800px] h-[350px]"
-              />
-            </section>
+        <section class="col-span-4 bg-[#ffffff]">
+          <div class="p-5">
+            <div class="flex">
+              <div class="mr-5"><img src="./images/01.jpg" alt=""  class="w-[400px] h-[200px]"/></div>
+              <div>
+                <h1 class="font-bold p-2">
+                  What Should You Take In Your Bag Before Going.
+                </h1>
+                <div class="flex gap-2">
+                  <img
+                    src="./images/girl.jpg"
+                    alt=""
+                    class="h-[50px] w-[50px] rounded-full"
+                  />
+                  <p>Dhruv Jain</p>
+                  <p>Icon</p>
+                </div>
+                <p class="text-justify p-2">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Illum aliquam vel magnam laborum impedit quis atque. Libero
+                    officiis ab, maxime, dolor excepturi, iure ex saepe qui
+                    impedit magni doloribus eligendi.Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit, sed do eiusmod incididunt ut
+                    labore et dolore magna aliqua.Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit, sed do eiusmod incididunt ut
+                    labore et dolore magna aliqua.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
+
+        <!--Themes Good Photography  -->
+       
       </div>
     </main>
+     <!-- Footer -->
   </body>
 </html>
